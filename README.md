@@ -2,14 +2,14 @@
 
 **Status:** 🚧 In Development  
 
-Ein persönliches Portfolio-Projekt bestehend aus einer **React-Frontend App** und einem **Spring Boot 3 Backend**.  
-Optional kann eine PostgreSQL-Datenbank integriert werden, um Projekte, Blogposts oder andere Inhalte dynamisch zu verwalten.  
+A personal portfolio project consisting of a **React frontend application** and a **Spring Boot 3 backend**.  
+Optionally, a PostgreSQL database can be integrated to manage projects, blog posts, or other dynamic content.  
 
 ---
 
 ## 🏗️ System Architecture  
 
-- **Frontend:** `portfolioui` – React App (UI Layer)  
+- **Frontend:** `portfolioui` – React app (UI layer)  
 - **Backend:** `portfolio` – Spring Boot 3 REST API  
 - **Database (optional):** PostgreSQL  
 
@@ -17,9 +17,9 @@ Optional kann eine PostgreSQL-Datenbank integriert werden, um Projekte, Blogpost
 
 ## 🔧 Tech Stack  
 
-- **Frontend:** React (Vite oder CRA, optional TypeScript)  
+- **Frontend:** React (Vite or CRA, optional TypeScript)  
 - **Backend:** Spring Boot 3 (Java 21, REST APIs)  
-- **Database:** PostgreSQL *(nur falls benötigt)*  
+- **Database:** PostgreSQL *(only if required)*  
 - **Build & Deploy:** Maven, Docker, Kubernetes/k3s ready  
 
 ---
