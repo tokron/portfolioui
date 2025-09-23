@@ -1,16 +1,43 @@
-# React + Vite
+# 📂 PortfolioUI  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Status:** 🚧 In Development  
 
-Currently, two official plugins are available:
+A personal portfolio project consisting of a **React frontend application** and a **Spring Boot 3 backend**.  
+Optionally, a PostgreSQL database can be integrated to manage projects, blog posts, or other dynamic content.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🏗️ System Architecture  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** `portfolioui` – React app (UI layer)  
+- **Backend:** `portfolio` – Spring Boot 3 REST API  
+- **Database (optional):** PostgreSQL  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Tech Stack  
+
+- **Frontend:** React (Vite or CRA, optional TypeScript)  
+- **Backend:** Spring Boot 3 (Java 21, REST APIs)  
+- **Database:** PostgreSQL *(only if required)*  
+- **Build & Deploy:** Maven, Docker, Kubernetes/k3s ready  
+
+---
+
+## 📌 Features (Planned)  
+
+- [ ] Responsive portfolio website (React)  
+- [ ] Backend REST API for content management (Spring Boot 3)  
+- [ ] Optional DB layer for projects & blog posts (Postgres)  
+- [ ] CI/CD pipeline (GitHub Actions, Docker)  
+- [ ] Deployment to Kubernetes or Cloud provider  
+
+---
+
+## 🚀 Getting Started  
+
+### Frontend (React)  
+```bash
+cd portfolioui
+npm install
+npm start
