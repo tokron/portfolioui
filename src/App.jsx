@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './components/Header'
+import ProjectCard from './components/ProjectCard'
+import { projects } from './data/projects'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App(){
+    return (
+        <div className="container">
+            <Header />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+            <section className="card" style={{marginBottom:24}}>
+                <h2>Java / React Full-Stack Engineer</h2>
+                <p className="muted">Microservices (Spring Boot, PostgreSQL, RabbitMQ) & moderne UIs (React, Vite).</p>
+                <div className="badges" style={{marginTop:10}}>
+                    <span className="badge">Java 21</span>
+                    <span className="badge">Spring Boot 3</span>
+                    <span className="badge">React</span>
+                    <span className="badge">PostgreSQL</span>
+                </div>
+                <div style={{marginTop:14, display:'flex', gap:10}}>
+                    <a className="btn primary" href="mailto:<public-email>">Contact</a>
+                    <a className="btn" href="/cv.pdf">Download CV</a>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2 style={{margin:'0 0 12px'}}>Highlighted Projects</h2>
+                <div className="grid">
+                    {projects.map(p => <ProjectCard key={p.slug} {...p} />)}
+                </div>
+            </section>
+        </div>
+    );
 }
-
-export default App
