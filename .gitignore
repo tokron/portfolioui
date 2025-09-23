@@ -1,62 +1,24 @@
-# --- OS ---
-.DS_Store
-Thumbs.db
-Icon?
-
-
-# --- Node / Package Managers ---
-node_modules/
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-# Lockfiles NICHT ignorieren (package-lock.json / yarn.lock / pnpm-lock.yaml comitten)
+lerna-debug.log*
 
-
-# --- Build / Caches ---
-dist/
-build/
-.tmp/
-.temp/
-.cache/
-.vite/
-.parcel-cache/
-coverage/
-.eslintcache
-.prettier-cache
-*.tsbuildinfo
-
-
-# --- Env / Local config ---
-.env
-.env.*
-!.env.example
+node_modules
+dist
+dist-ssr
 *.local
 
-
-# --- Logs / PIDs ---
-logs/
-*.log
-*.pid
-*.seed
-*.pid.lock
-
-
-# --- IntelliJ IDEA / JetBrains ---
-.idea/
-*.iml
-out/
-
-# (Optional) Wenn du gezielt gewisse IDEA-Dateien behalten willst, nimm .idea/ raus
-# und ignoriere stattdessen granular:
-# .idea/workspace.xml
-# .idea/tasks.xml
-# .idea/usage.statistics.xml
-# .idea/dictionaries
-# .idea/httpRequests
-# .idea/shelf
-
-
-# --- Optional: VS Code ---
-# .vscode/
-# .history/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
